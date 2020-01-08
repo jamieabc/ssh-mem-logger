@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="All Places" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fec7478-f763-4dd0-bdaf-102ba2ac6230" name="Default Changelist" comment="" />
+    <list default="true" id="9fec7478-f763-4dd0-bdaf-102ba2ac6230" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/internal/client/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/remoteCmds/top.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/remoteCmds/top_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/mem_logger/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/mem_logger/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/mem_logger/mem_logger" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/mem_logger/mem_logger" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/ssh/ssh.go" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go/1.13.5/libexec" />
+  <component name="GOROOT" path="/usr/local/opt/go/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -15,6 +29,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="AnkIVVTA" />
@@ -33,8 +50,18 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="go.sdk" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build mem_logger/">
+    <configuration name="go build github.com/jamieabc/ssh-mem-logger/cmd/mem_logger" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="ssh-mem-logger" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/cmd/mem_logger/main.go" />
+      <package value="github.com/jamieabc/ssh-mem-logger/cmd/mem_logger" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build mem_logger/" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="ssh-mem-logger" />
       <working_directory value="$PROJECT_DIR$/cmd/mem_logger" />
@@ -44,6 +71,26 @@
       <directory value="$PROJECT_DIR$/cmd/mem_logger" />
       <method v="2" />
     </configuration>
+    <configuration name="remoteCmds" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="ssh-mem-logger" />
+      <working_directory value="$PROJECT_DIR$/internal/remoteCmds" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$/internal/remoteCmds" />
+      <filePath value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build mem_logger/" />
+      <item itemvalue="Go Build.go build github.com/jamieabc/ssh-mem-logger/cmd/mem_logger" />
+      <item itemvalue="Go Test.remoteCmds" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build github.com/jamieabc/ssh-mem-logger/cmd/mem_logger" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -60,46 +107,72 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="use ssh to connect" />
+    <MESSAGE value="add idea settings" />
+    <MESSAGE value="Squashed commit of 1-ssh:&#10;&#10;commit 1bf24bb00daf52cbe807443bec1c92895e88cd9f&#10;Author: Aaron Chang &lt;xesuschang@gmail.com&gt;&#10;Date:   Wed Jan 8 16:11:06 2020 +0800&#10;&#10;    add idea settings&#10;&#10;commit 62ffdd34ad2fa0b4e0a6b01f2c3788d31a6f9e1e&#10;Author: Aaron Chang &lt;xesuschang@gmail.com&gt;&#10;Date:   Wed Jan 8 16:10:58 2020 +0800&#10;&#10;    use ssh to connect" />
+    <option name="LAST_COMMIT_MESSAGE" value="Squashed commit of 1-ssh:&#10;&#10;commit 1bf24bb00daf52cbe807443bec1c92895e88cd9f&#10;Author: Aaron Chang &lt;xesuschang@gmail.com&gt;&#10;Date:   Wed Jan 8 16:11:06 2020 +0800&#10;&#10;    add idea settings&#10;&#10;commit 62ffdd34ad2fa0b4e0a6b01f2c3788d31a6f9e1e&#10;Author: Aaron Chang &lt;xesuschang@gmail.com&gt;&#10;Date:   Wed Jan 8 16:10:58 2020 +0800&#10;&#10;    use ssh to connect" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <proxy>direct</proxy>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="744" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578470844532">
+    <state x="1040" y="205" key="#Build_Tags_&amp;_Vendoring" timestamp="1578478660385">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="744" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578470844532" />
-    <state x="875" y="116" key="CommitChangelistDialog2" timestamp="1578471066768">
+    <state x="1040" y="205" key="#Build_Tags_&amp;_Vendoring/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578478660385" />
+    <state x="1040" y="205" key="#Inspections" timestamp="1578477708893">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="875" y="116" key="CommitChangelistDialog2/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578471066768" />
-    <state width="960" height="313" key="GridCell.Tab.0.bottom" timestamp="1578470892606">
+    <state x="1040" y="205" key="#Inspections/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578477708893" />
+    <state x="744" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578473386091">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="960" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578470892606" />
-    <state width="960" height="313" key="GridCell.Tab.0.center" timestamp="1578470892606">
+    <state x="744" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578473386091" />
+    <state x="875" y="0" width="979" height="1080" key="CommitChangelistDialog2" timestamp="1578479685063">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="960" height="313" key="GridCell.Tab.0.center/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578470892606" />
-    <state width="960" height="313" key="GridCell.Tab.0.left" timestamp="1578470892605">
+    <state x="875" y="0" width="979" height="1080" key="CommitChangelistDialog2/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578479685063" />
+    <state width="960" height="313" key="GridCell.Tab.0.bottom" timestamp="1578479645479">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="960" height="313" key="GridCell.Tab.0.left/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578470892605" />
-    <state width="960" height="313" key="GridCell.Tab.0.right" timestamp="1578470892606">
+    <state width="960" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578479645479" />
+    <state width="960" height="313" key="GridCell.Tab.0.center" timestamp="1578479645478">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="960" height="313" key="GridCell.Tab.0.right/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578470892606" />
+    <state width="960" height="313" key="GridCell.Tab.0.center/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578479645478" />
+    <state width="960" height="313" key="GridCell.Tab.0.left" timestamp="1578479645478">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="960" height="313" key="GridCell.Tab.0.left/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578479645478" />
+    <state width="960" height="313" key="GridCell.Tab.0.right" timestamp="1578479645479">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="960" height="313" key="GridCell.Tab.0.right/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578479645479" />
+    <state x="971" y="179" key="SettingsEditor" timestamp="1578478700292">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="971" y="179" key="SettingsEditor/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578478700292" />
+    <state x="1078" y="372" key="com.intellij.ide.util.TipDialog" timestamp="1578478882517">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1078" y="372" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578478882517" />
     <state x="1127" y="338" key="git4idea.merge.GitMergeDialog" timestamp="1578471075797">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1127" y="338" key="git4idea.merge.GitMergeDialog/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578471075797" />
-    <state width="600" height="424" key="javadoc.popup" timestamp="1578469874521">
+    <state width="600" height="424" key="javadoc.popup" timestamp="1578477990107">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="600" height="424" key="javadoc.popup/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578469874521" />
+    <state width="600" height="424" key="javadoc.popup/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578477990107" />
     <state x="1202" y="153" key="refactoring.ChangeSignatureDialog" timestamp="1578469884594">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1202" y="153" key="refactoring.ChangeSignatureDialog/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578469884594" />
-    <state x="1105" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1578470936310">
+    <state x="1105" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1578478917781">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1105" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578470936310" />
+    <state x="1105" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080/-1440.0.1440.900@0.0.1920.1080" timestamp="1578478917781" />
   </component>
 </project>
