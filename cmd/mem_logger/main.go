@@ -1,8 +1,10 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"github.com/jamieabc/ssh-mem-logger/internal/client"
+	"github.com/jamieabc/ssh-mem-logger/internal/parser"
 	"github.com/jamieabc/ssh-mem-logger/internal/remoteCmds"
 	"golang.org/x/crypto/ssh"
 	"io"
@@ -13,9 +15,23 @@ const (
 	program = "bitmarkd"
 )
 
+var (
+	configPath string
+)
+
+func init() {
+	flag.StringVar(&configPath, "c", "", "-c config file path")
+	flag.Parse()
+
+	// make sure config exist
+	if configPath == "" {
+		panic("please input config path")
+	}
+}
+
 type connection struct {
 	remoteIP   string
-	remotePort uint
+	remotePort int
 	serverName string
 	session    *ssh.Session
 	info       client.Info
@@ -31,26 +47,25 @@ func main() {
 		panic(err)
 	}
 
-	info := client.Info{
-		Username:    "ec2-user",
-		KeyFilePath: "/Users/Aaron/.aws/aaron_key.pem",
+	p := parser.NewParser(configPath)
+	c, err := p.Parse()
+	if nil != err {
+		panic(err)
 	}
 
-	cons := []connection{
-		{
-			remoteIP:   "13.114.24.6",
-			remotePort: 22,
-			serverName: "test",
+	cons := make([]connection, 0)
+
+	for _, s := range c.Servers {
+		cons = append(cons, connection{
+			remoteIP:   s.IP,
+			remotePort: s.Port,
+			serverName: s.Name,
 			session:    nil,
-			info:       info,
-		},
-		{
-			remoteIP:   "54.238.201.3",
-			remotePort: 22,
-			serverName: "test2",
-			session:    nil,
-			info:       info,
-		},
+			info: client.Info{
+				Username:    s.UserName,
+				KeyFilePath: s.KeyPath,
+			},
+		})
 	}
 
 	setupConnections(cons)
